@@ -1,0 +1,178 @@
+
+#body-row {
+    margin-left:0;
+    margin-right:0;
+}
+#sidebar-container {
+    min-height: 100vh;   
+    background-color: #333;
+    padding: 0;
+}
+
+/* Sidebar sizes when expanded and expanded */
+.sidebar-expanded {
+    width: 230px;
+}
+.sidebar-collapsed {
+    width: 60px;
+}
+
+/* Menu item*/
+#sidebar-container .list-group a {
+    height: 50px;
+    color: white;
+}
+
+/* Submenu item*/
+#sidebar-container .list-group .sidebar-submenu a {
+    height: 45px;
+    padding-left: 30px;
+}
+.sidebar-submenu {
+    font-size: 0.9rem;
+}
+
+/* Separators */
+.sidebar-separator-title {
+    background-color: #333;
+    height: 35px;
+}
+.sidebar-separator {
+    background-color: #333;
+    height: 25px;
+}
+.logo-separator {
+    background-color: #333;    
+    height: 60px;
+}
+
+/* Closed submenu icon */
+#sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
+  content: " \f0d7";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+}
+/* Opened submenu icon */
+#sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
+  content: " \f0da";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+}
+.carousel-item > div {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+.titulo_nav{
+    font-size: 80px;
+    font-family: raleway;
+}
+.contenido_nav{
+    padding-top: 110px;
+    font-size: 25px;
+}
+
+
+/* Css para el text area */
+
+
+
+  #paper {
+      color:#FFF;
+      font-size:20px;
+  }
+  #margin {
+      margin-left:12px;
+      margin-bottom:20px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none; 
+  }
+  #text {
+      width:500px;
+      overflow:hidden;
+      background-color:#fff;
+      color:#333;
+      font-family:Courier, monospace;
+      font-weight:normal;
+      font-size:18px;
+      resize:none;
+      line-height:40px;
+      padding-left:100px;
+      padding-right:100px;
+      padding-top:45px;
+      padding-bottom:34px;
+      background-repeat:repeat-y, repeat;
+      -webkit-border-radius:12px;
+      border-radius:12px;
+     
+  }
+  #box{
+    -webkit-border-radius:12px;
+    border-radius:12px;
+  }
+  #box:hover{
+    background-color: transparent;
+    border-color: #62add6;
+  }
+  #text:hover{
+    background-color: transparent;
+    color: #000000;
+    border-color: #62add6;
+  }
+  #title {
+      background-color:transparent;
+      border-bottom:3px solid #FFF;
+      color:#FFF;
+      font-size:20px;
+      font-family:Courier, monospace;
+      height:28px;
+      font-weight:bold;
+      width:220px;
+  }
+  #button {
+      cursor:pointer;
+      margin-top:20px;
+      float:right;
+      height:40px;
+      padding-left:24px;
+      padding-right:24px;
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight:bold;
+      font-size:20px;
+      color:#FFF;
+      text-shadow: 0px -1px 0px #000000;
+      -webkit-border-radius:8px;
+      border-radius:8px;
+      border-top:1px solid #FFF;
+      -webkit-box-shadow: 0px 2px 14px #000;
+      box-shadow: 0px 2px 14px #000;
+      background-color: #62add6;
+      background-image:url(https://static.tumblr.com/maopbtg/ZHLmgtok7/button.png);
+      background-repeat:repeat-x;
+  }
+  #button:active {
+      zoom: 1;
+      filter: alpha(opacity=80);
+      opacity: 0.8;
+  }
+  #button:focus {
+      zoom: 1;
+      filter: alpha(opacity=80);
+      opacity: 0.8;
+  }
+  #wrapper {
+      width:700px;
+      height:auto;
+      margin-left:auto;
+      margin-right:auto;
+      margin-top:24px;
+      margin-bottom:100px;
+  }
