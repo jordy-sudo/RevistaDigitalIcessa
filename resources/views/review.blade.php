@@ -19,13 +19,24 @@
                     <form action="{{url('image/upload/store')}}" method="POST"
                     enctype="multipart/form-data">
                     @csrf <!-- {{ csrf_field() }} -->
+                   
+                        
+                    <div class="col text-center">
+                        <i class="fa fa-upload fa-10x" aria-hidden="true" ></i>
+                    </div>
+                            
+                        
+                        
                     <div class="form-group">
-                        <label >Titulo *</label>
-                        <input type="text" name="title_img" class="form-control " >
+                        
+                        <label >Titulo de la imagen *</label>
+                        <input type="text" name="title_img" class="form-control  $errors->has('name') ? 'error' : '' " required>
+                     
+                    
                     </div>
                     <div class="form-group">
-                        <label >Image</label>
-                        <input type="file" name="file" class="form-control" require>
+                        <label >Carga Imagen</label>
+                        <input type="file" name="file" class="form-control" required>
                     </div>
                     
                   
@@ -40,7 +51,7 @@
         <div class="col-6">
             <div class="card "style="height: 310px">
                 <div class="card-body ">
-                    <textarea  placeholder="Descripcion de la imagen" id="text" name="descripcion" rows="4" style="overflow: hidden; word-wrap: break-word; resize: none; height: 100%; width: 100%" require></textarea>                                
+                    <textarea  placeholder="Descripcion de la imagen" id="text" name="descripcion" rows="4" style="overflow: hidden; word-wrap: break-word; resize: none; height: 100%; width: 100%" required></textarea>                                
                 </div>  
             </div>
             <div class="col text-center">

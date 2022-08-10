@@ -21,13 +21,17 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/invitados', [App\Http\Controllers\InvitadosController::class, 'index'])->name('invitados');
+Route::get('/invitados-mater', [App\Http\Controllers\InvitadosController::class, 'indexMaster'])->name('invitados-mater');
+Route::get('/gallery', [App\Http\Controllers\InvitadosController::class, 'gallery'])->name('gallery');
 
 //rutas para el admin
-Route::get('review', function () {
+Route::get('review', function () {   
     return view('review');
 });
 
-//ruytas para acciones de imagenes
+
+
+//rutas para acciones de imagenes
 Route::get('image/upload',[App\Http\Controllers\ImageUploadController::class, 'fileCreate']);
 Route::post('image/upload/store',[App\Http\Controllers\ImageUploadController::class, 'fileStore']);
 Route::post('image/delete',[App\Http\Controllers\ImageUploadController::class, 'fileDestroy']);

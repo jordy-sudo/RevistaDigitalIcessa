@@ -12,7 +12,8 @@
           <div class="carousel-item active" data-bs-interval="10000">
             <img src="https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="d-block w-100 " alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h1 class="titulo_nav">Icesa S.A</h1>
+              <h1 class="titulo_nav">Revista Digital</h1>
+              <h2 class="titulo_nav">Icesa S.A</h2>
               <p class="contenido_nav">Empresa de retail que tiene una trayectoria comercial desde  1965 en la  comercialización de electrodomésticos y accesorios eléctricos y móviles; para encontrarse situada en el mercado siempre ha dependido del
                 contingente humano. quienes han apoyado a la empresa a alcanzar los las metas
                 de ventas establecidas.</p>

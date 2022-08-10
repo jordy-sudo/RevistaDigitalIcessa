@@ -15,13 +15,26 @@
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <!-- JavaSCript modal IMG -->
+    <script>
+        function abreModalImagen(elemtImg)
+        {
+            let modal = document.getElementById("staticBackdrop");
+            let imagenModal = document.getElementById("data-image");
+            let titulo = document.getElementById("staticBackdropLabel").innerHTML =`${elemtImg.id}`;
+            let descripcion =document.getElementById("des").innerHTML=`${elemtImg.alt}`;
+            let usuario  =document.getElementById("user").innerHTML=`${elemtImg.name}`;
+            imagenModal.src = elemtImg.src ;
+            modal.style.display = 'block';
+        }
+    </script>
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm justify-content-center">
             <div class="container">
              
-                    <a class="navbar-brand text-light">©Icesa. S.A.</a>
+                    <a class="navbar-brand text-light" href="/">©Icesa. S.A.</a>
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

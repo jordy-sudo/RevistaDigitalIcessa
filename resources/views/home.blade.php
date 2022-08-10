@@ -56,10 +56,10 @@
                       <span class="menu-collapsed">Password</span>
                   </a>
               </div>            
-              <a href="#" class="bg-dark list-group-item list-group-item-action">
+              <a href="{{route('invitados-mater')}}" class="bg-dark list-group-item list-group-item-action">
                   <div class="d-flex w-100 justify-content-start align-items-center">
                       <span class="fa fa-tasks fa-fw mr-3"></span>
-                      <span class="menu-collapsed">Tasks</span>    
+                      <span class="menu-collapsed">Vista</span>    
                   </div>
               </a>
              
@@ -78,7 +78,7 @@
           
           
           <div class="card">
-              <h4 class="card-header">Carga de datos</h4>
+              <h4 class="card-header">Carga de imagen del mes de  {{ config('constants.date') }}</h4>
               <div class="card-body">
                     <main class="py-4">
                         @yield('Review')

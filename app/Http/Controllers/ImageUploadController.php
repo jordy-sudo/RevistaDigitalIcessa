@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\ImageUpload;
 use App\Models\Post;
 use App\Http\Requests\PostRequest;
+
 class ImageUploadController extends Controller
 {
     //creacion de ruta par almacenar la imagen
@@ -28,7 +29,6 @@ public function fileStore(Request $request)
     if($request->file('file')){
         $post->image = $request->file('file')->store('posts','public');
         $post->image_name = $request->file('file')->getClientOriginalName();
-        $post->validate();
         $post->save();  
     }
 
